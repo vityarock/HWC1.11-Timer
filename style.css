@@ -4,11 +4,10 @@ body{
     background-repeat: no-repeat;
 }
 
-.settimer {
-    display: none;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
+button{
+    padding: 8px 10px;
+    border-radius: 5px;
+    border: 2px solid rgb(65, 44, 132);
 }
 
 input{
@@ -16,6 +15,13 @@ input{
 	width: 100px;
 	margin: 15px;
 }
+.settimer {
+    display: none;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
 .submit { 
 	height: 60px;
 	width: 200px;
@@ -46,7 +52,6 @@ input{
     display: inline-block;
     color: #E7292C;
     font-weight: bold;
-  
 }
  
 .countdown-time {
@@ -68,20 +73,14 @@ input{
     font-size: 180px;
     margin-top: 250px;
     margin-left: 300px;
-
     height: auto;
     background-color: #262626;
-
 }
 
-button{
-    padding: 8px 10px;
-    border-radius: 5px;
-    border: 2px solid rgb(65, 44, 132);
- }
  .keys{
     margin-left: 500px;
 }
+
 .pause{
 	display: none;
 	margin-left: 600px;

@@ -35,24 +35,22 @@ myJquery.prototype.class = function(name){
   return this;
 }
 myJquery.prototype.html = function(html){
-    if (html) {
-this.each(element=> element.innerHTML = html)
-return this
-}
-else {
-this.each(element=>element.innerHTML)
+if (html) {
+  this.each(element => element.innerHTML = html)
+  return this
+} else {
+  this.each(element => element.innerHTML)
   return this;
 }
 }
 
 myJquery.prototype.text = function (text) {
 if (text) {
-this.each(element=> element.innerText = text)
-return this
-}
-else {
-this.each(element=>element.innerText)
-return this
+  this.each(element => element.innerText = text)
+  return this
+} else {
+  this.each(element => element.innerText)
+  return this
 }
 }
 
@@ -93,7 +91,7 @@ const countDown = () => {
     body.style.backgroundColor = '#262626';
     body.style.backgroundImage = 'none';
     $('.pause').hide();
-    message.innerHTML = '<p>BOOM</p>'
+    $('.message').html('<p>BOOM</p>')
   }
   if (countSec > 0) countSec--;
   else {
@@ -132,7 +130,6 @@ minus.onclick = () =>{
   } 
 
 start.onclick = () => {
-	// countDown();
   body.style.backgroundImage = "url('bomb.jpg')";
   body.style.backgroundColor = '#ffffff';
   $('.keys').hide();
@@ -163,5 +160,4 @@ clock_submit.onclick = () => {
   $('.settimer').hide();
   $('.keys').show();
 }
-
 });
